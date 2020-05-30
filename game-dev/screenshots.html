@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Game Dev - Dakoda Koziol</title>
+	<link rel="icon" href="/icons/favicon.svg">
+	
+	<link href="/master.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700;800&family=Nunito:ital,wght@0,400;0,700;1,200;1,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <aside>
+ 
+        <a id="back" href="/index.html">
+            <h1><b>Dakoda Koziol</b>,<br> Computer Science Student<br> & Graphic Designer</h1>
+            <img src="/icons/back.svg" alt="Go back to the home page">
+        </a>
+        <h2>Game Development in Unity Engine</h2>
+        <p>I have been dabbling with Unity for a few years now. In fact, I built a mobile game for my high school senior project titled <em>Kayak-O-Rama!</em>, a 2-D, top-down, local multiplayer kayak racing game. I even introduced myself to Git via Bitbucket and SourceTree for this project, but I still have a lot to learn with that. I’ve since started a few other projects, all very physics based, but I haven’t finished one yet. My web Authoring final project is also relevant as a showcase for <em>Kayak-O-Rama!</em> and one of my later projects.</p>
+        <div class="buttonWrapper">
+            <a href="concept-art.html">Concept Art</a>
+            <a id="uRHere">Screenshots</a>
+            <a href="research-paper.html">Research Paper</a>
+            <a href="https://students.csitech.net/dkoziol/WebFinalProject/Part3/index.html" target="_blank">
+                Web Authoring Final Project
+                <img src="/icons/link.svg">
+            </a>
+        </div>
+
+    </aside>
+	
+	<article>
+
+        <div>
+            <h2>Screenshots</h2>
+            <p>Today <em>Kayak-O-Rama</em> is still very, very early in its development with “programmer-art” and only one level, but I put more than a hundred hours into it regardless. Right now it includes a burst-firing ball-cannon that I coded from scratch, workable flow-physics, and strikingly immersive parallax trees.</p>
+            <figure>
+                <img src="images/kayak-o-rama/screenshots/1Game.png">
+                <img src="images/kayak-o-rama/screenshots/1Scene.png">
+                <figcaption>Here I got the physics of the kayak working. It only had keyboard controls at this point. Pressing the left key applies a forward force to the kayak at the two left points I placed around the left paddle, and it's the same on the right. I wrote a script to give the kayak more side-to-side friction than forward-and-backward, like a real boat.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kayak-o-rama/screenshots/2.png">
+                <figcaption>Then I added touch controls.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kayak-o-rama/screenshots/3.png">
+                <figcaption>Here I got the terrain working, which was fairly straightforward&mdash;it's just an image with a collider.<figcaption>
+            </figure>
+            <figure>
+                <img src="images/kayak-o-rama/screenshots/4.png">
+                <figcaption>Two-player gameplay went smoothly, though in this screenshot I could only control one kayak with touch buttons&mdash;the other was still keyboard-controlled.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kayak-o-rama/screenshots/5.png">
+                <figcaption>At this point I'm still messing with the touch controls, but I also got a burst-firing ball-canon functioning. I took advantage of an object pooling asset I found to efficiently deal with all of those projectiles, and wrote the shooting script myself: it alternates between firing a random number of balls at a set rate and “cooling down” for a random length of time, and is very configurable.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kayak-o-rama/screenshots/6.png">
+                <figcaption>Here I started working with flow physics. It's simply a bunch of rectangles that, depending on their rotation, apply a force to the kayaks, or even floating test dummies. They can be overlapped. I'm not really satisfied with this solution, and I might give vector fields a shot, but the best solution may just be a more sophisticated version of the rectangle scheme I have now. I'm just not sure how well that would scale.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kayak-o-rama/screenshots/Capture7.png">
+                <img src="images/kayak-o-rama/screenshots/Final.png">
+                <figcaption>I finally got the touch controls down. I made the rectangles white to provide some visual cue. It's gross looking, but it'll do until the fundamental physics are set. Not pictured is the main menu of the game, where you can choose between one and two players (only one level though). I also, finally, did something about the graphics. The trees turned out pretty well, I think. You can’t tell from the screenshots, but they have a parallax effect set up which makes the scene a lot more immersive. Suddenly there was this sense of scale. I haven’t got to building the vines; for that I will look into splines first.</tbody></figcaption>
+            </figure>
+        </div>
+
+    </article>
+    
+    <script> </script>
+
+</body>
+</html>
