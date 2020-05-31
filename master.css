@@ -63,7 +63,7 @@ article ul ul li{
 	font-weight: 200;
 	font-style: italic;
 }
-article div>ul:last-child{
+article section>ul:last-child{
 	margin-bottom: 1rem;
 }
 
@@ -127,7 +127,7 @@ a:hover {
 	padding: 1rem 1.5rem;
 	border: none;
 
-	box-shadow: 0 0px 5px #00000045;
+	box-shadow: 2px 5px 20px #00000020;
 	background-color: #005dff;
 
 	/*text-align: center;*/
@@ -226,35 +226,41 @@ aside{
 	
 	box-shadow: 2px 5px 25px #c5c5c5;
 }
-article > div{
+article section{
 	background-color: white;
 	border-radius: 20px;
 	padding:15px calc(20px + 0.8rem);
-	/*box-shadow: 2px 5px 20px #00000010;*/
+	box-shadow: 2px 5px 20px #00000020;
 }
-object{
+object, iframe{
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
 	margin:1rem 0;
-	/*padding: 1rem;*/
 
 	background-color: #add8e6;
-	
-	box-shadow: 2px 5px 20px #00000010;
+	box-shadow: 2px 5px 20px #00000020;
 }
+
 figcaption{
 	box-sizing: border-box;
 	font-style: italic;
 	padding:0 1rem 0;
 	margin: 0.7rem 0 1.3rem;
 }
+figure {
+	margin: 1rem 0;
+}
 figure img{
-	margin-bottom: 0;
+	margin: 0;
 }
 #back img{
 	top:calc(3.4rem + 10px);
 }
+article img{
+	box-shadow: 2px 5px 20px #00000020;
+}
+
 
 /* small device */
 @media screen and (max-width: 550px){
@@ -264,21 +270,21 @@ figure img{
 	article{
 		width:100%;
 	}
-	article > div{
+	article section{
 		margin: 10px;
 	}
-	object{
+	object, iframe{
 		height: calc(100vh - 60px - 5.4rem);
 	}
 }
 
 /* medium */
 @media screen and (min-width: 551px) and (max-width:1000px){
-	article > div{
+	article section{
 		max-width: 450px;
 		margin: 10px auto;
 	}
-	object{
+	object, iframe{
 		height: calc(100vh - 60px - 5.4rem);
 	}
 }
@@ -298,10 +304,10 @@ figure img{
 		margin-left: 460px;
 		width: auto;
 	}
-	article > div{
+	article section{
 		margin:30px 50px;
 	}
-	object{
+	object, iframe{
 		height: calc(100vh - 100px - 5.4rem);
 	}
 }
@@ -316,5 +322,7 @@ figure img{
 		max-width: 49%;
 		display: inline-block;
 		vertical-align: top;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 }
