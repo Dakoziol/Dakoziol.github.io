@@ -14,6 +14,8 @@ html *{
 	list-style-type: none;
 	margin: 1rem 0;
 	padding: 0;
+	
+	max-width: calc(430px - 0.8rem);
 }
 img{
 	display: block;
@@ -138,12 +140,13 @@ a:hover {
 	
 	transition: all ease 0.5s;
 }
-
 .buttonWrapper a:hover{
-	box-shadow: 2px 5px 12px #b4b4b4;
+	box-shadow: 2px 5px 20px #00000050;
 	background-color: #00348f !important;
 }
 .buttonWrapper a:active{
+	box-shadow: 2px 5px 10px #00000050;
+
 	background-color: black !important;
 	transition: all ease 0.1s;
 }
@@ -242,6 +245,7 @@ object, iframe{
 	box-shadow: 2px 5px 20px #00000020;
 }
 
+
 figcaption{
 	box-sizing: border-box;
 	font-style: italic;
@@ -251,15 +255,28 @@ figcaption{
 figure {
 	margin: 1rem 0;
 }
-figure img{
+figure>img{
+	box-shadow: 2px 5px 20px #00000020;
+}
+figure a>img{
 	margin: 0;
+	box-shadow: 2px 5px 20px #00000020;
+	transition: all ease 0.5s;
+}
+figure a>img:hover{
+	filter: brightness(1.25);
+	box-shadow: 2px 5px 20px #00000050;
+	transition: all ease 0.5s;
+}
+figure a>img:active{
+	filter: brightness(0.75);
+	box-shadow: 2px 5px 10px #00000050;
+	transition: all ease 0.2s;
 }
 #back img{
 	top:calc(3.4rem + 10px);
 }
-article img{
-	box-shadow: 2px 5px 20px #00000020;
-}
+
 
 
 /* small device */
