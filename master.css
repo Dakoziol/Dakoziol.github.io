@@ -10,6 +10,20 @@ html *{
 	margin: 0px;
 }
 
+/* to touch or not to touch? */
+.touchOnly{
+	display: none;
+}
+@media(hover:none){
+	.touchOnly{
+		display: unset;
+	}
+	.mouseOnly{
+		display: none;
+	}
+}
+
+
 #contactItems{
 	list-style-type: none;
 	margin: 1rem 0;
@@ -181,6 +195,11 @@ img.loneIcon{
 	cursor: pointer;
 	transition: all ease 0.5s;
 }
+@media(hover:none){
+	.copyable{
+		cursor: none;
+	}
+}
 
 .copyable span{
 	border-radius: 5px;
@@ -199,6 +218,11 @@ img.loneIcon{
 	opacity: 0;
 	transition: all ease 0.5s;
 }
+/*@media (hover:none){
+	.copyable div{
+		opacity: 50%;
+	}
+}*/
 .copyable:hover div {
 	opacity: 50%;
 }
