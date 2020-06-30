@@ -24,12 +24,12 @@ img{
 }
 
 /* to touch or not to touch? */
-@media(hover:none){
+@media (hover: none) {
 	.mouseOnly{
 		display: none;
 	}
 }
-@media(hover:hover){
+@media (hover: hover) {
 	.touchOnly{
 		display: none;
 	}
@@ -247,7 +247,7 @@ img.loneIcon{
 .copyable>div::after{
 	content: "click to copy";
 }
-@media (hover:none){
+@media (hover: none) {
 	.copyable{
 		cursor: none;
 	}
