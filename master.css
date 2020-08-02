@@ -113,7 +113,9 @@ a:hover {
 	z-index: 500000;
 
 	transition: all ease 0.5s;
-	animation: headBackClue ease 2s;
+	animation: headBackClue ease 0.6s alternate;
+	animation-iteration-count: 2;
+	animation-delay: 2s;
 }
 #back>h1:hover{
 	color: #bdbdbd;
@@ -136,27 +138,17 @@ a:hover {
 	0%{
 		color:black;
 		background-color: #ffffffda;
-		padding-left: 0;	
-	}
-	35%{
-		color:black;
-		background-color: #ffffffda;
 		padding-left: 0;
 	}
-	60%{
-		color: #bdbdbd;
-		background-color: transparent;
-		padding-left: calc(6rem + 30px);
-	}
-	75%{
+	83%{
 		color: #bdbdbd;
 		background-color: transparent;
 		padding-left: calc(6rem + 30px);
 	}
 	100%{
-		color:black;
-		background-color: #ffffffda;
-		padding-left: 0;	
+		color: #bdbdbd;
+		background-color: transparent;
+		padding-left: calc(6rem + 30px);
 	}
 }
 
@@ -392,7 +384,5 @@ figure>a:active>img{
 		max-width: 49%;
 		display: inline-block;
 		vertical-align: top;
-		margin-top: 0;
-		margin-bottom: 0;
 	}
 }
