@@ -210,7 +210,7 @@ aside>.buttonWrapper{
 
 	filter: invert(100%);
 
-	vertical-align: middle;
+	vertical-align: -10%;
 	height: 1rem;
 }
 
@@ -266,9 +266,8 @@ img.loneIcon{
 }
 .copyable>div>img{
 	padding: 0;
-	margin: 0 0.5rem;
+	margin: 0.1rem 0.3rem 0;
 	height: 1rem;
-	vertical-align: middle;
 	float: left;
 }
 
