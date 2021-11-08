@@ -27,7 +27,7 @@ img{
 	margin: 1rem 0;
 }
 
-/* to touch or not to touch? */
+/* touch: yay or nay? */
 @media (hover: none) {
 	.mouseOnly{
 		display: none;
@@ -100,6 +100,8 @@ a:hover {
 #back>img{
 	position: absolute;
 	z-index: 1;
+	/*color: rgb(50, 168, 133);*/
+	fill:rgb(50, 168, 133);
 	
 	margin: 0;
 	height: 5.4rem;
@@ -160,6 +162,11 @@ a:hover {
 /*BUTTONS*/
 .buttonWrapper{
 	margin: calc(1.5rem - 5px) -5px;
+	
+}
+h2>.buttonWrapper{
+	display: inline;
+	margin-left: auto;
 }
 aside>.buttonWrapper{
 	background-color: #ffffffdd;
@@ -178,7 +185,7 @@ aside>.buttonWrapper{
 	border: none;
 
 	box-shadow: 2px 5px 1rem #00000020;
-	background-color: #005dff;
+	background-color: rgb(50, 168, 133);
 
 	/*text-align: center;*/
 	font-size: 1rem;
@@ -190,7 +197,7 @@ aside>.buttonWrapper{
 }
 .buttonWrapper>a:hover{
 	box-shadow: 2px 5px 1rem #00000050;
-	background-color: #00348f !important;
+	background-color: rgb(62, 209, 165) !important;
 }
 .buttonWrapper>a:active{
 	box-shadow: 2px 5px 0.5rem #00000050;
@@ -214,14 +221,15 @@ aside>.buttonWrapper{
 	height: 1rem;
 }
 
+
 img.loneIcon{
 	margin: 0;
 }
 
 #uRHere, #uRHere:hover, #uRHere:active{
-	color: #00348f;
+	color: rgb(50, 168, 133);
 	background-color: transparent !important;
-	box-shadow: 0 0 0 3px #00348f inset;
+	box-shadow: 0 0 0 3px rgb(50, 168, 133) inset;
 }
 
 /* copyables*/
@@ -275,6 +283,11 @@ img.loneIcon{
 body{
 	background-color: gainsboro;
 	background-image: linear-gradient(to right,#f4f4f4,#dcdcdc);
+	
+	/*background-image: url(/IsometricGridTemplateWoah.svg);
+	background-repeat: repeat-y;
+	background-size:contain; <- alternative WIP*/
+
 	display:block;
 	margin: 0;
 	padding: 0;
@@ -287,7 +300,7 @@ aside{
 	box-shadow: 2px 5px 1.5rem #c5c5c5;
 }
 article>section{
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 2rem;
 	padding: 0.5rem 2rem;
 	box-shadow: 2px 5px 1rem #00000020;
