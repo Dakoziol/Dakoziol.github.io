@@ -7,6 +7,7 @@ html{
 	font-size: 18px;
 	line-height: 1.5;
 	font-family: 'Kumbh Sans', sans-serif;
+	font-family: 'Calibri';
 	color: black;
 }
 *, *:before, *:after {
@@ -38,6 +39,11 @@ img{
 		display: none;
 	}
 }
+.touchOnly{
+	color:rgb(193, 106, 1);
+	
+}
+
 
 /* type */
 h1 {
@@ -59,7 +65,7 @@ h2 {
 	font-family: 'Dosis', sans-serif;
 	font-weight: 800;
 
-	margin: 1rem 0;
+	margin: 1.4rem 0 0.8rem;
 }
 h3{
 	font-size: 1rem;
@@ -213,7 +219,7 @@ aside>.buttonWrapper{
 .buttonWrapper img{
 	display: inline-block;
 	margin: 0;
-	margin-left: 0.5rem;
+	padding-right:0.5rem;
 
 	filter: invert(100%);
 
@@ -221,9 +227,9 @@ aside>.buttonWrapper{
 	height: 1rem;
 }
 
-
-img.loneIcon{
-	margin: 0;
+.buttonWrapper>a>img.toTheRight{
+	margin-left: 0.5rem;
+	padding: 0;
 }
 
 #uRHere, #uRHere:hover, #uRHere:active{
